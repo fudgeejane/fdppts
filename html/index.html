@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="icon" type="image/png" href="../img/PPTS.png">
+</head>
+<body>
+    
+    <div class="sidebar">
+        <div id="menu-icon">
+            <img src="../img/menu.png" alt="Menu" />
+        </div>
+        <a href="index.html" class="active">
+            <img src="../img/dashw.png" alt="Dashboard" class="logo"> <p>Dashboard</p>
+        </a>
+        <a href="projects.html">
+            <img src="../img/projw.png" alt="Projects" class="logo"> <p>Projects</p>
+        </a>
+        <a href="archives.html">
+            <img src="../img/arcw.png" alt="Archives" class="logo"> <p>Archives</p>
+        </a>
+        <a href="progress.html">
+            <img src="../img/progw.png" alt="Progress" class="logo"> <p>Progress</p>
+        </a>
+        <a href="account.html">
+            <img src="../img/accw.png" alt="Account" class="logo"> <p>Account</p>
+        </a>
+    </div>
+    
+    <div class="content">
+        <div class="header">
+            <div class="search-container">
+                <div class="search-bar">
+                    <img src="../img/search.png" alt="Search" class="search-icon">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="icons">
+                    <img src="../img/notw.png" id="notification-icon" alt="Notifications" class="icon">
+                    <img src="../img/add.png" alt="User" class="icon" id="join-now-btn">
+                    <span class="user-name">Francine Jane Sto Domingo</span>
+                </div>
+            </div>
+            <div class="welcome">
+                <p class="date-day-time">
+                    <span id="current-date" class="date"></span>
+                    <span class="day" id="current-day"></span>
+                    <span class="time" id="current-time"></span>
+                </p>
+                <h2>Welcome, John Doe!</h2>
+                <p class="p"> Start your day with a Smile</p>
+            </div>
+        </div>
+        
+        <div class="main">
+            <div class="projects">
+                <h3>Projects</h3>
+                <h4><a href="projects.html">View all -></a></h4> 
+                <p class="none">
+                    You currently don't have a progress space. Would you like to join one?
+                </p>
+                <button id="join-now-btn" class="join-btn">Join now</button>
+            </div>
+            <div class="notes">
+                <h3>What's on your mind?</h3>
+                <div class="note-input-container">
+                    <input type="text" id="note-input" placeholder="Add a note...">
+                    <button id="add-note-btn">Add</button>
+                </div>
+                <ul id="note-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="notification-popup" class="notification-popup">
+        <div class="notification-content">
+            <div class="notification-info">
+                <span class="notification-user">Francine Jane Sto Domingo</span>
+                <p>Updated the task: <strong>Design Dashboard</strong> in project <strong>Task Vista</strong></p>
+                <p class="notification-timestamp">August 26, 2024, 14:45</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="join-progress-popup" class="popup-overlay" style="display: none;">
+        <div class="popup-content">
+            <h3>Join a Progress Space</h3>
+            <p>Would you like to join a progress space? Enter the code below:</p>
+            <input type="text" id="progress-code-input" placeholder="Enter code...">
+            <div class="popup-buttons">
+                <button id="submit-join">Submit</button>
+                <button id="cancel-join">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../javascript/dashboard.js"></script>
+</body>
+</html>
