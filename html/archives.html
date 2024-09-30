@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archives</title>
+    <link rel="stylesheet" href="../css/archives.css">
+    <link rel="icon" type="image/png" href="../img/PPTS.png">
+</head>
+<body>
+    
+    <div class="sidebar">
+        <div id="menu-icon">
+            <img src="../img/menu.png" alt="Menu" />
+        </div>
+        <a href="dashboard.html">
+            <img src="../img/dashw.png" alt="Dashboard" class="logo"> <p>Dashboard</p>
+        </a>
+        <a href="projects.html">
+            <img src="../img/projw.png" alt="Projects" class="logo"> <p>Projects</p>
+        </a>
+        <a href="archives.html"  class="active">
+            <img src="../img/arcw.png" alt="Archives" class="logo"> <p>Archives</p>
+        </a>
+        <a href="progress.html">
+            <img src="../img/progw.png" alt="Progress" class="logo"> <p>Progress</p>
+        </a>
+        <a href="account.html">
+            <img src="../img/accw.png" alt="Account" class="logo"> <p>Account</p>
+        </a>
+    </div>
+
+    <div class="content">
+        <div class="header">
+            <div class="search-container">
+                <div class="search-bar">
+                    <img src="../img/search.png" alt="Search" class="search-icon">
+                    
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="icons">
+                    <img src="../img/notw.png" id="notification-icon" alt="Notifications" class="icon">
+                    <img src="../img/add.png" alt="User" class="icon" id="join-now-btn-image">
+                    <a href="account.html"><img src="../img/accw.png" alt="pfp" class="icon"> </a>
+                    <span class="user-name">Francine Jane Sto Domingo</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-div">
+            <div class="inner-box">Name</div>
+            <div class="inner-box">Project</div>
+            <div class="inner-box">Log</div>
+            <div class="inner-box">Status</div>
+        </div>
+        <div class="single-div">
+            <div class="inner-box">Marzette Ashley</div>
+            <div class="inner-box">CS-52: System Analysis and Design</div>
+            <div class="inner-box">Uploaded - Task 1</div>
+            <div class="inner-box">Complete</div>
+        </div>
+    
+    </div>
+
+    <div id="notification-popup" class="notification-popup">
+        <div class="notification-content">
+            <div class="notification-info">
+
+                <span class="notification-user">Francine Jane Sto Domingo</span>
+                <p>Updated the task: <strong>Design Dashboard</strong> in project <strong>Task Vista</strong></p>
+                <p class="notification-timestamp">August 26, 2024, 14:45</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="join-progress-popup" class="popup-overlay">
+        <div class="popup-content">
+            <h3>Join a Progress Space</h3>
+            <p>Would you like to join a progress space? Enter the code below:</p>
+            <input type="text" id="progress-code-input" placeholder="Enter code...">
+            <div class="popup-buttons">
+                <button id="submit-join">Submit</button>
+                <button id="cancel-join">Cancel</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="../javascript/archives.js"></script>
+</body>
+</html>
